@@ -7,83 +7,93 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Gallery</h1>
-      <nav>
-        <a href="index.html">Back to Home</a>
-      </nav>
-    </header>
+    <center>
+<header>
+  <h1>Art Museum - Gallery</h1>
+  <br><br>
+  <nav> <a href="index.html"> back Home</a> </nav>
+</header>
+    <section id="vanGogh">
+      <h2>Vincent van Gogh</h2>
+      <!-- תמונה קטנה ללחיצה -->
+      <a href="#artwork1">
+        <img class="thumbnailSmall" src="img/artwork1.jpg" alt=" van Gogh art">
+      </a>
+      <a href="#artwork2">
+        <img class="thumbnailSmall" src="img/artwork2.jpg" alt=" van Gogh art">
+      </a>
+      <a href="#artwork3">
+        <img class="thumbnailSmall" src="img/artwork3.jpg" alt=" van Gogh art">
+      </a>
+      <!-- תמונה מוגדלת -->
+      <section id="artwork1" class="pop-up" >
+        <img  class="thumbnailLarge" src="img/artwork1.jpg" alt=" van Gogh art">
+        <a href="#">X</a>
+      </section>
+      <section id="artwork2" class="pop-up" >
+        <img  class="thumbnailLarge" src="img/artwork2.jpg" alt=" van Gogh art">
+        <a href="#">X</a>
+      </section>
+      <section id="artwork3" class="pop-up" >
+        <img  class="thumbnailLarge" src="img/artwork3.jpg" alt=" van Gogh art">
+        <a href="#">X</a>
+      </section>
+      <br><br><br> <br>
+        <audio controls src="song/Gallery.mp3"></audio>
+    </section>
+    <section id="ClaudeMonet">
+      <h2>Claude Monet</h2>
+            <!-- תמונה קטנה ללחיצה -->
+      <a href="#artwork4">
+        <img class="thumbnailSmall" src="img/artwork4.jpg" alt="Claude Monet art">
+      </a>
+      <a href="#artwork5">
+        <img class="thumbnailSmall" src="img/artwork5.jpg" alt="Claude Monet art">
+      </a>
+      <a href="#artwork6">
+        <img class="thumbnailSmall" src="img/artwork6.jpg" alt="Claude Monet art">
+      </a>
+      <!-- תמונה מוגדלת -->
+      <section id="artwork4" class="pop-up" >
+        <img  class="thumbnailLarge" src="img/artwork4.jpg" alt="Claude Monet art">
+        <a href="#">X</a>
+      </section>
+      <section id="artwork5" class="pop-up" >
+        <img  class="thumbnailLarge" src="img/artwork5.jpg" alt="Claude Monet art">
+        <a href="#">X</a>
+      </section>
+      <section id="artwork6" class="pop-up" >
+        <img  class="thumbnailLarge" src="img/artwork6.jpg" alt="Claude Monet art">
+        <a href="#">X</a>
+      </section>
+      <br><br><br><br>
+      <audio controls src="song/Gallery.mp3"></audio>
+    </section>
+    <section id="PaulCézanne">
+      <h2>Paul Cézanne</h2>
+       <!-- תמונה קטנה ללחיצה -->
+      <a href="#artwork7">
+        <img class="thumbnailSmall" src="img/artwork7.jpg" alt="Paul Cézanne art">
+      </a>
+      <a href="#artwork8">
+        <img class="thumbnailSmall" src="img/artwork8.jpg" alt="Paul Cézanne art">
+      </a>
+      <a href="#artwork9">
+        <img class="thumbnailSmall" src="img/artwork9.jpg" alt="Paul Cézanne art">
+      </a>
+      <br><br><br><br>
+      <audio controls src="song/Gallery.mp3"></audio>
+    </section>
 
-    <main>
-      <section id="vangogh">
-        <h2>Vincent van Gogh</h2>
-        <a href="#popup1"><img src="img/artwork1.jpg" alt="The Starry Night" width="150" class="thumbnail" /></a>
-        <a href="#popup2"><img src="img/artwork2.jpg" alt="Sunflowers" width="150" class="thumbnail" /></a>
-        <a href="#popup3"><img src="img/artwork3.jpg" alt="Café Terrace at Night" width="150" class="thumbnail" /></a>
-        <p>Interview:</p>
-        <audio controls src="media/interview1.mp3"></audio>
-      </section>
-
-      <section id="monet">
-        <h2>Claude Monet</h2>
-        <a href="#popup4"><img src="img/artwork4.jpg" alt="Impression, Sunrise" width="150" class="thumbnail" /></a>
-        <a href="#popup5"><img src="img/artwork5.jpg" alt="Woman with a Parasol" width="150" class="thumbnail" /></a>
-        <a href="#popup6"><img src="img/artwork6.jpg" alt="Water Lilies" width="150" class="thumbnail" /></a>
-      </section>
-
-      <section id="rembrandt">
-        <h2>Rembrandt</h2>
-        <a href="#popup7"><img src="img/artwork7.jpg" alt="The Night Watch" width="150" class="thumbnail" /></a>
-        <a href="#popup8"><img src="img/artwork8.jpg" alt="The Storm on the Sea of Galilee" width="150" class="thumbnail" /></a>
-        <a href="#popup9"><img src="img/artwork9.jpg" alt="Syndics of the Drapers' Guild" width="150" class="thumbnail" /></a>
-      </section>
-
-      <!-- Popups -->
-      <section id="popup1">
-        <img src="img/artwork1.jpg" alt="The Starry Night" />
-        <p>The Starry Night - Vincent van Gogh, 1889</p>
-        <a href="#">&times;</a>
-      </section>
-      <section id="popup2">
-        <img src="img/artwork2.jpg" alt="Sunflowers" />
-        <p>Sunflowers - Vincent van Gogh, 1888</p>
-        <a href="#">&times;</a>
-      </section>
-      <section id="popup3">
-        <img src="img/artwork3.jpg" alt="Café Terrace at Night" />
-        <p>Café Terrace at Night - Vincent van Gogh, 1888</p>
-        <a href="#">&times;</a>
-      </section>
-      <section id="popup4">
-        <img src="img/artwork4.jpg" alt="Impression, Sunrise" />
-        <p>Impression, Sunrise - Claude Monet, 1872</p>
-        <a href="#">&times;</a>
-      </section>
-      <section id="popup5">
-        <img src="img/artwork5.jpg" alt="Woman with a Parasol" />
-        <p>Woman with a Parasol - Claude Monet, 1875</p>
-        <a href="#">&times;</a>
-      </section>
-      <section id="popup6">
-        <img src="img/artwork6.jpg" alt="Water Lilies" />
-        <p>Water Lilies - Claude Monet, 1906</p>
-        <a href="#">&times;</a>
-      </section>
-      <section id="popup7">
-        <img src="img/artwork7.jpg" alt="The Night Watch" />
-        <p>The Night Watch - Rembrandt, 1642</p>
-        <a href="#">&times;</a>
-      </section>
-      <section id="popup8">
-        <img src="img/artwork8.jpg" alt="The Storm on the Sea of Galilee" />
-        <p>The Storm on the Sea of Galilee - Rembrandt, 1633</p>
-        <a href="#">&times;</a>
-      </section>
-      <section id="popup9">
-        <img src="img/artwork9.jpg" alt="Syndics of the Drapers' Guild" />
-        <p>Syndics of the Drapers' Guild - Rembrandt, 1662</p>
-        <a href="#">&times;</a>
-      </section>
-    </main>
+    <footer class="footer" >
+      <h3>⏱️ Museum Hours</h3>
+      <ul>
+        <li>Monday - Friday: 10 AM - 6 PM</li>
+        <li>Saturday - Sunday: 11 AM - 7 PM</li>
+      </ul>
+      <h3>📍 Location </h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9081734935166!2d2.3265614!3d48.859961399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2bb630941b%3A0xd071bd8cb14423d8!2z157XldeW15nXkNeV158g15Mn15DXldeo16HXlA!5e0!3m2!1siw!2sil!4v1791282412961!5m2!1siw!2sil" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </footer>
+   </center>
   </body>
 </html>

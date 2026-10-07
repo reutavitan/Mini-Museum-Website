@@ -1,58 +1,88 @@
-/* ===== Step 2: Type Selectors ===== */
+
 
 h1 {
-  color: darkslateblue;
+  color: rgb(151, 100, 6);
   font-size: 40px;
+  font-family: 'Taamey David CL', serif;
+
 }
 
 h2 {
-  color: teal;
-  font-size: 28px;
+  color: rgb(179, 150, 58);
+  font-size: 30px;
+   font-family: 'Tinos', serif;
+   
 }
 
+ul {
+  
+   padding: 30px;
+  display: flex;
+   gap: 40px;
+}
 nav a {
   text-transform: uppercase;
   font-weight: bold;
 }
+body { padding: 30px;}
 
 footer {
-  background-color: #333333;
-  color: white;
+   background: linear-gradient(135deg, #e8dfcd, #d8c7a8);
+  color: #6b5842;
+  border-radius: 8px;
+  border-top: 1px solid #c9ad78;
+  padding: 20px;
+  
 }
-
-/* ===== Step 3: Class Selectors ===== */
-
 .artist-card {
-  border: 2px solid darkslateblue;
+  border: 2px solid rgb(139, 126, 61);
   border-radius: 10px;
-  background-color: lavender;
+  background-color: rgb(255, 254, 240);
+  height: 600px;
+  width: 500px;
 }
-
-.thumbnail {
+.artist-card img {
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+}
+.thumbnailSmall {
   border: 3px solid #333333;
   border-radius: 8px;
+  height: 200px;
+  width: 200px;
+}
+.thumbnailLarge {
+  border: 3px solid #333333;
+  border-radius: 8px;
+  height: 600px;
+  width: 600px;
+
+}
+.pop-up{
+  display: none;
+}
+.pop-up:target {
+   display: block;
 }
 
 /* ===== Step 4: Id Selectors ===== */
 
-#vangogh h2 {
-  color: goldenrod;
+#PaulCézanne h2 {
+  color: rgb(218, 165, 32);
 }
 
-#monet h2 {
-  color: cornflowerblue;
+#vanGogh h2 {
+  color: rgb(100, 149, 237);
 }
 
-#rembrandt h2 {
-  color: saddlebrown;
+#claudeMonet h2 {
+  color: rgb(139, 69, 19);
 }
 
-#welcome-text {
-  font-size: 22px;
+#welcome {
+  font-size: 40px;
 }
-
-/* ===== Step 5: Parent + Child Selectors ===== */
-
 header nav a {
   color: darkslateblue;
 }
@@ -85,5 +115,6 @@ footer a {
     h2              -> (0, 0, 1)  one type
     .artist-card    -> (0, 1, 0)  one class
     #vangogh h2     -> (1, 0, 1)  one id + one type
-    header nav a    -> (0, 0, 3)  three types
+    hea
+    der nav a    -> (0, 0, 3)  three types
 */
