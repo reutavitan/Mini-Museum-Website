@@ -66,8 +66,6 @@ footer {
    display: block;
 }
 
-/* ===== Step 4: Id Selectors ===== */
-
 #PaulCézanne h2 {
   color: rgb(218, 165, 32);
 }
@@ -94,27 +92,6 @@ main article h2 {
 footer a {
   color: white;
 }
-
-/* ===== Step 6: Specificity Check ===== */
-
-/*
-  The "Visit Us" <h2> in visit.html has class="section-title".
-  Two rules try to color it:
-    h2             { color: teal; }     (type selector, Step 2)
-    .section-title { color: crimson; }  (class selector, below)
-  Crimson wins: a class selector is more specific than a type selector,
-  so it wins no matter which rule comes first in the file.
-*/
-
 .section-title {
   color: crimson;
 }
-
-/*
-  Specificity scores (id, class, type):
-    h2              -> (0, 0, 1)  one type
-    .artist-card    -> (0, 1, 0)  one class
-    #vangogh h2     -> (1, 0, 1)  one id + one type
-    hea
-    der nav a    -> (0, 0, 3)  three types
-*/
